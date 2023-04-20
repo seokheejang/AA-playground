@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "sub-update": "git submodule update --init --recursive"
+    "sub-up": "git submodule update --init --recursive"
   },
   "repository": {
     "type": "git",
