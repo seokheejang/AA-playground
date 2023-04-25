@@ -29,6 +29,7 @@
     "module-alias": "^2.2.2"
   },
   "_moduleAliases": {
-    "@eth-infinitism-bundler": "./eth-infinitism-bundler/node_modules"
+    "@eth-infinitism-bundler/node_modules": "./eth-infinitism-bundler/node_modules",
+    "@eth-infinitism-bundler/packages": "./eth-infinitism-bundler/packages"
   }
 }
