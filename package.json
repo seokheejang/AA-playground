@@ -5,7 +5,11 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "sub-up": "git submodule update --init --recursive"
+    "sub-up": "git submodule update --init --recursive",
+    "preprocess": "yarn --cwd eth-infinitism-bundler preprocess",
+    "hardhat-deploy": "yarn --cwd eth-infinitism-bundler hardhat-deploy --network localhost",
+    "bundler": "yarn --cwd eth-infinitism-bundler run bundler",
+    "runop": "yarn --cwd eth-infinitism-bundler run runop --deployFactory"
   },
   "repository": {
     "type": "git",
@@ -20,5 +24,11 @@
   "devDependencies": {
     "tslint": "^6.1.3",
     "typescript": "^5.0.4"
+  },
+  "dependencies": {
+    "module-alias": "^2.2.2"
+  },
+  "_moduleAliases": {
+    "@eth-infinitism-bundler": "./eth-infinitism-bundler/node_modules"
   }
 }
